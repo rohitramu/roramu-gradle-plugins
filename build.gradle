@@ -5,8 +5,6 @@ def buildVersion = '1.0'
 
 def currentVersion = "${buildVersion}.${rootProject.buildRevision}"
 
-def buildSettingsFolder = 'build_settings'
-
 println "Build version: $currentVersion"
 println "Gradle wrapper version: ${wrapper.gradleVersion}"
 
