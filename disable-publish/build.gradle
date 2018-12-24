@@ -3,3 +3,12 @@ apply plugin: 'java-gradle-plugin'
 dependencies {
 
 }
+
+gradlePlugin {
+    plugins {
+        disablePublish {
+            id = 'roramu.disable-publish'
+            implementationClass = 'roramu.gradle.plugins.DisablePublishPlugin'
+        }
+    }
+}
