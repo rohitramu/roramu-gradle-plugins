@@ -10,7 +10,6 @@ println "Gradle wrapper version: ${wrapper.gradleVersion}"
 
 buildscript { scriptHandler ->
     apply from: "$buildSettingsFolder/buildscript_repositories.gradle", to: scriptHandler
-    apply from: "$buildSettingsFolder/buildscript_dependencies.gradle", to: scriptHandler
 }
 
 allprojects {
